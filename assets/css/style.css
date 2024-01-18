@@ -34,7 +34,7 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #ffffff;
+    color: #fff;
     user-select: none;
 }
 
@@ -49,7 +49,7 @@ header {
 }
 
 
-.navigation a::after {
+.navigation a::after {  /* هذا تحديد التركيز  */
     content: " ";
     position: absolute;
     left: 0;
@@ -73,7 +73,7 @@ header {
     width: 130px;
     height: 50px;
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #bba923;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -87,7 +87,7 @@ header {
 
 .navigation .btnLogin-popup:hover {
     background: #fff;
-    color: #9c9319;
+    color: #77650a;
 }
 
 
@@ -98,7 +98,7 @@ header {
     background: transparent;
     border-radius: 2px solid rgba(255, 225, 255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     box-sizing: 0 0 30px rgbe(0, 0, 0, .5);
     display: flex;
     justify-content: center;
@@ -174,13 +174,17 @@ header {
     height: 45px;
     background: #fff;
     font-size: 1.5em;
-    color: #0c0b0b4a;
+    color: #9c9319;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
+}
+
+.wrapper .icon {
+   
 }
 
 
@@ -193,23 +197,24 @@ header {
 .input-box {
     position: relative;
     width: 100%;
-    height: 59px;
+    left: 5px;
     border-bottom: 2px solid #ecf2f7;
     margin: 30px 0;
 }
 
 .input-box label {
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
+    position: absolute;
+    top: 100%;
+    left: 1px;
+    transform: translateY(-110%);
     font-size: 1em;
-    color: #e3edf5;
+    color: #bba923;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
 }
 
-.input-box input:first~label,
+.input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
 }
@@ -217,7 +222,7 @@ header {
 
 .input-box input {
     width: 100;
-    height: 100%;
+    left: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -227,12 +232,12 @@ header {
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon {
+.input-box .icon { ***********
     position: absolute;
-    left: 8px;
+    right: 1px;
     font-size: 1.2em;
-    color: #d6e1e9;
-    line-height: 57px;
+    color: #bba923;
+    line-height: 10px;
 }
 
 .remember-forgot {
