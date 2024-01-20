@@ -50,7 +50,7 @@ header {
 
 
 .navigation a::after {  /* هذا تحديد التركيز  */
-    content: " ";
+    content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -182,15 +182,12 @@ header {
     cursor: pointer;
     z-index: 1;
 }
-
-.wrapper .icon {
-   
-}
+  
 
 
 .form-box h2 {
     font-size: 2em;
-    color: #d4e2ed;
+    color: #fff;
     text-align: center;
 }
 
@@ -198,7 +195,7 @@ header {
     position: relative;
     width: 100%;
     left: 5px;
-    border-bottom: 2px solid #ecf2f7;
+    border-bottom: 2px solid hsl(210, 100%, 99%);
     margin: 30px 0;
 }
 
@@ -232,13 +229,14 @@ header {
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon { ***********
+.input-box .icon {/* *********** */
     position: absolute;
     right: 1px;
     font-size: 1.2em;
     color: #bba923;
-    line-height: 10px;
+    line-height: 20px;
 }
+
 
 .remember-forgot {
     font-size: .9em;
@@ -266,28 +264,28 @@ header {
 .btn {
     width: 100%;
     height: 45px;
-    background: #087ee41d;
+    background: #fafbfc1d;
     border: none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 100px;
     cursor: pointer;
-    font-size: 1em;
-    color: #fff;
+    font-size: 1.2em;
+    color: #998d08;
     font-weight: 500;
 }
 
 .login-register {
     font-size: .9em;
-    color: #dee8ef;
+    color: #7f7506;
     text-align: center;
     font-weight: 500;
-    margin: 25px 0 10px;
+    margin: 50px 0 10px;
 }
 
 .login-register p a {
-    color: #cfdce6;
+    color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 60;
 }
 
 .login-register p a:hover {

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="white=device-width,
+        <meta name="viewport" content="widte=device-width,
         initial-scale=1.0">
 
         <title> 
@@ -19,10 +19,10 @@
             <h2 class="logo"> logo </h2>
             <nav class="navigation">
                 
-                <il><a href="#">Home</a></il>
-                <il> <a href="#">About</a></il>
-               <il> <a href="#">services</a> </il>
-               <il> <a href="#">Contact</a> </il>
+                <a href="#">Home</a>
+                 <a href="#">About</a>
+                 <a href="#">services</a> 
+                 <a href="#">Contact</a> 
                 <button class="btnLogin-popup"> Login</button>
             </nav>
         </header>
@@ -30,20 +30,21 @@
             
         
         <div class="wrapper">
-            <span class="icon-close">✖️</span>
-
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
             <div class="form-box login">
                 <h2>Login</h2>
                 <form action="#">
                     <div class="input-box">
-                        <span class="icon">📧</span>
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon></span>
                         <input type="email" required>
                         <label>Email</label>
                     </div>
 
 
                     <div class="input-box">
-                        <span class="icon">🗝️</span>
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon></span>
                         <input type="password" required>
                         <label>Password</label>
                     </div>
@@ -55,27 +56,28 @@
                      <button type="submit" class="btn"> Login</button>
                      <div class="login-register">
                         <p> Don,t have an accoun?
-                            <a href="#"class="register-link">Register</a></p>
+                            <a href="#" id="register"  class="register-link">Register</a></p>
                      </div>
                 </form>
                     </div>
+                </div>
 
             <div class="form-box register">
                 <h2>Registration</h2>
                 <form action="#">
                     <div class="input-box">
-                        <span class="icon">👤</span>
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                         <input type="text" required>
                         <label>Username</label>
                     </div>
                     
                     <div class="input-box">
-                        <span class="icon">📧</span>
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
                         <input type="email" required>
                         <label>Email</label>
                     </div>
                     <div class="input-box">
-                        <span class="icon">🗝️</span>
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
                         <input type="password" required>
                         <label>Password</label>
             
@@ -91,11 +93,12 @@
                 </form>
             
             </div>
-        </div>
+        
 
 
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-        <script src="assets/script/script.js"></script>
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 
 
